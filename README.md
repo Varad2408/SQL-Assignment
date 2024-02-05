@@ -37,9 +37,6 @@ WHERE cardiac_intensive_care_fte > 10;
 ![image](https://github.com/Varad2408/SQL-Assignment/assets/152723954/60424285-4645-4741-b3a9-854ed3b9dc72)
 Q5: Find the average total nursing home personnel (full-time and part-time) per county.
 ```sql
-SELECT county_name
-FROM `bigquery-public-data.covid19_aha.staffing`
-WHERE cardiac_intensive_care_fte > 10;
 SELECT county_name, AVG(total_nursing_home_personnel_pt + total_nursing_home_personnel_ft) AS avg_personnel
 FROM `bigquery-public-data.covid19_aha.staffing`
 GROUP BY county_name;
