@@ -66,6 +66,8 @@ JOIN `bigquery-public-data.covid19_aha.staffing` s ON h.county_fips_code = s.cou
 ORDER BY h.total_hospital_beds / (s.total_personnel_pt + s.total_personnel_ft) ASC
 LIMIT 14;
 ```
+![image](https://github.com/Varad2408/SQL-Assignment/assets/152723954/4e2d4bfc-7ba1-4b30-a936-a7a7e46bdd53)
+
 Q.10 Retrieve the counties where the ratio of registered nurses (full-time and part-time) to total hospital beds is highest.
 ```sql
 SELECT h.county_name
